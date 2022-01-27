@@ -282,6 +282,86 @@ header{
     margin-left: 10px;
 }
 
+/* part 2 starts here */ /* part 2 starts here *//* part 2 starts here */
+
+#section-work{
+    padding: 5rem 0 5rem 1.5rem;
+    position: relative;
+}
+#header{
+    font-size: 2rem;
+    color: #08fdd8;
+    margin-bottom: 30px;
+}
+.text-zone-2 p{
+    line-height: 1.5;
+}
+.fake-big-2{
+    font-size: 12rem;
+    font-weight: 700;
+    position: absolute;
+    color: #2d2d2e;
+    left: 10px;
+    bottom: -70px;
+    letter-spacing: -10px;
+    z-index: -999;
+}
+.fake-magicwall{
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.fake-magicwall ul{
+    list-style: none;
+    display: flex;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    flex-wrap: wrap;
+}
+.fake-magicwall ul li{
+    width: 161px;
+    height: 160px;
+    position: relative;
+    overflow: hidden;
+    display: list-item;
+}
+.fake-magicwall .magic-wall_item{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    transition: transform 0.5s, opacity 0.5s;
+    transition: transform 0.5s, opacity 0.5s, -webkit-transform 0.5s;
+}
+.fake-magicwall img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.fake-magicwall ul li:hover .magic-wall_item{
+    transform: scale(1.14);
+    -ms-transform: scale(1.4);
+    -webkit-transform: scale(1.14);
+}
+.fake-magicwall ul li a.colorbox{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../images/circle.png) no-repeat center;
+    opacity: 0;
+    transition: all 150ms ease-out;
+    -o-transition: all 150ms ease-out;
+    -webkit-transition: all 150ms ease-out;
+    transform: scale(0.2);
+}
+.fake-magicwall ul li:hover a.colorbox{
+    transform: scale(0.6);
+    opacity: 1;
+}
+
 
 
 /* media section for bigger screens */
@@ -344,6 +424,41 @@ header{
         right: auto;
     }
     /* this is tht end of section home */
+
+    /* part 2 media query bigger screens starts here */
+    #section-work{
+        width: 85%;
+        margin: 0 30px 0 auto;
+        display: flex;
+        flex-direction: column;
+    }
+    .text-zone-2{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #header{
+        font-size: 2.5rem;
+    }
+    .text-zone-2 p{
+        width: 700px;
+        font-size: 14px;
+        line-height: 1.5rem;
+    }
+    .fake-big-2{
+        font-size: 25rem;
+        font-weight: 700;
+        left: 560px;
+        top: 0;
+    }
+    .fake-magicwall{
+        padding-left: 8.5rem;
+    }
+    .fake-magicwall ul li{
+        width: 242px;
+        height: 236px;
+    }
+
 
 
 }
